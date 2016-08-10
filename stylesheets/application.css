@@ -590,6 +590,12 @@ div.flash, .nodata, .warning {
   border-radius: 3px;
 }
 
+div.flash.notice {
+    background-color: #ffdada;
+    border-color: #900;
+    color: #666;
+}
+
 div.attributes[id="attributes"] {
   border: 1px 0 0 0 0 solid #f00;
 }
