@@ -27,7 +27,7 @@ body {
 
 #header {
   background: #455b9d;
-  background: linear-gradient(#4f68b5, #455b9d, #455b9d); /* HSV(222, 50, 76) -> (222, 50, 68) -> (222, 50, 68) */
+    background: linear-gradient(#cc0a4b, #900, #9d4545);
 }
 
 h1, h2, h3, h4 {
