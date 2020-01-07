@@ -1,10 +1,7 @@
-= Redmine用テーマ "topgate fancy"
+# Redmine用テーマ "topgate fancy"
 
 farendさんの "farend fancy" を赤っぽく。
 
-Redmineの画面を楽しく親しみやすくすることを目的として、farend basicをベースにアイコン表示の追加を中心とした変更を行いました。
-
-== farend fancyテーマの特長
 # Redmine用テーマ "farend fancy"
 
 Redmineの画面を楽しく親しみやすくすることを目的として、farend basicをベースにアイコン表示の追加を中心とした変更を行いました。
