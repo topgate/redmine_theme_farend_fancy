@@ -5,21 +5,33 @@ farendさんの "farend fancy" を赤っぽく。
 Redmineの画面を楽しく親しみやすくすることを目的として、farend basicをベースにアイコン表示の追加を中心とした変更を行いました。
 
 == farend fancyテーマの特長
+# Redmine用テーマ "farend fancy"
+
+Redmineの画面を楽しく親しみやすくすることを目的として、farend basicをベースにアイコン表示の追加を中心とした変更を行いました。
+
+サンプル1 (メニュー):
+<kbd><img src="https://github.com/farend/redmine_theme_farend_fancy/blob/images/menu.png" /></kbd>
+
+サンプル2 (エクスポートアイコン):
+<kbd><img src="https://github.com/farend/redmine_theme_farend_fancy/blob/images/export-icon.png" /></kbd>
+
+## farend fancyテーマの特長
 
 * 主要なタブやリンクにアイコン表示が追加された親しみやすい画面です。
 * メニューの位置や配色はデフォルトのテーマに近いので、既存のテーマに慣れ親しんだ方も違和感なくご利用になれます。
 * 日本語環境での画面の見やすさなど、farend basicの特長を継承しています。
 
+## インストール方法
 
-== インストール方法
+### public/themes以下にテーマを保存
 
-=== public/themes以下にテーマを保存
-
-Redmineのインストールディレクトリで以下のコマンドを実行してください。
-
-  git clone git://github.com/topgate/redmine_theme_farend_fancy.git public/themes/topgate_fancy
 
 === 新しいテーマの利用
+```
+git clone git://github.com/topgate/redmine_theme_farend_fancy.git public/themes/topgate_fancy
+```
+
+### 新しいテーマの利用
 
 Redmineの管理画面で新しいテーマを利用する設定を行います。
 

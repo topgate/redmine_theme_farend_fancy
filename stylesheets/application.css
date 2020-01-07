@@ -34,10 +34,6 @@ h1, h2, h3, h4 {
   font-family: Meiryo, "Hiragino Kaku Gothic Pro", "MS PGothic", Verdana, sans-serif
 }
 
-pre, code {
-  font-family: Consolas, Menlo, "Liberation Mono", Courier, monospace;
-}
-
 #header h1 {
   font-size: 22px;
   text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.3);
@@ -89,6 +85,12 @@ pre, code {
 #main-menu li a.new-issue, #main-menu li a.new-issue:hover {
   padding-left: 24px;
   background-image: url(../images/ticket_add.png)
+}
+
+
+#main-menu li a.time-entries, #main-menu li a.time-entries:hover {
+  padding-left: 24px;
+  background-image: url(../images/time.png)
 }
 
 #main-menu li a.gantt, #main-menu li a.gantt:hover, #main-menu li a.lgc, #main-menu li a.lgc:hover {
@@ -316,7 +318,6 @@ tr.priority-lowest a {
 
 .box {
   color: #222;
-  border-radius: 3px;
   word-wrap: break-word;
 }
 
@@ -355,7 +356,6 @@ textarea.wiki-edit {
 
 div.issue {
   background-color: #ffffe6; /* HSV(60,10,100) */
-  border-radius: 3px;
 }
 
 div.issue div.subject p {
@@ -426,21 +426,10 @@ p.other-formats {
   color: #484848;
 }
 
-/***** Tabs *****/
-
-#content .tabs ul li a {
-  color: #666
-}
-
-#content .tabs ul li a.selected {
-  color: #333
-}
-
 /***** Wiki *****/
 
 div.wiki pre {
   /* farend_basic: preで横スクロールバーを表示させずに折り返す */;
-  border-radius: 3px;
   white-space: -moz-pre-wrap; /* Mozilla */
   white-space: -pre-wrap; /* Opera 4-6 */
   white-space: -o-pre-wrap; /* Opera 7 */
@@ -523,32 +512,32 @@ div.wiki li {
 
 a.atom {
     background: url(../images/oxygen/application-rss%2Bxml.png) no-repeat 0px 0px;
-    padding: 0px 0px 0px 18px;
+    padding: 2px 0px 3px 16px;
 }
 
 a.csv {
     background: url(../images/oxygen/text-csv.png) no-repeat 0px 0px;
-    padding: 0px 0px 0px 18px;
+    padding: 2px 0px 3px 16px;
 }
 
 a.txt {
     background: url(../images/oxygen/text-plain.png) no-repeat 0px 0px;
-    padding: 0px 0px 0px 18px;
+    padding: 2px 0px 3px 16px;
 }
 
 a.html {
     background: url(../images/oxygen/text-html.png) no-repeat 0px 0px;
-    padding: 0px 0px 0px 18px;
+    padding: 2px 0px 3px 16px;
 }
 
 a.pdf {
     background: url(../images/oxygen/application-pdf.png) no-repeat 0px 0px;;
-    padding: 0px 0px 0px 18px;
+    padding: 2px 0px 3px 16px;
 }
 
 a.png {
     background: url(../images/oxygen/image-x-generic.png) no-repeat 0px 0px;
-    padding: 0px 0px 0px 18px;
+    padding: 2px 0px 3px 16px;
 }
 
 #login-form table {
@@ -627,45 +616,6 @@ div.message {
   border-top: 1px dashed #ccc;
 }
 
-/***** pagination   obsoleted by http://www.redmine.org/issues/21258 *****/
-p.pagination > a:hover {
-  background: #ffffdd;
-}
-
-p.pagination > span.current {
-  font-weight: bold;
-  background: #d9e4ff;
-}
-
-p.pagination > .page {
-  margin-right: 1px;
-  padding: 1px 4px;
-  border: 1px solid #bbb;
-}
-
-p.pagination > a.previous {
-  margin-right: 1px;
-  padding: 1px 4px;
-  border: 1px solid #bbb;
-  border-radius: 10px 0 0 10px;
-}
-
-p.pagination > a.next {
-  margin-left: 1px;
-  padding: 1px 4px;
-  border: 1px solid #bbb;
-  border-radius: 0 10px 10px 0;
-}
-
-p.pagination > span.items {
-  margin-left: 0.3em;
-  margin-right: 0.6em;
-}
-
-span.per-page span {
-  font-weight: bold;
-}
-
 /* サイドバーの幅を狭く */
 #sidebar {
   width: 20%;
@@ -678,11 +628,6 @@ span.per-page span {
 
 * html #content{
   width: 77%;
-}
-
-/* 作成日・更新日に実際の日時を表示 */
-a[href*="activity"][title*=":"]:before {
-	content: ' [' attr(title) '] ';
 }
 
 .author {
@@ -728,10 +673,6 @@ div.journal ul.details i:after {
   font-style: normal;
 }
 
-div.journal div.wiki {
-  margin: 0 0 0 30px;
-}
-
 div.journal h4:first-child {
   font-size: 12px;
   font-weight: normal;
@@ -772,4 +713,10 @@ table.revision-info a {
 
 table.revision-info a:hover {
   color:#D14848;
+}
+
+@media print {
+  #content {
+    width: 100%;
+  }
 }
